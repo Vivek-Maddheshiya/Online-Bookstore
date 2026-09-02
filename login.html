@@ -8,11 +8,13 @@
             background-color: #f8fafc;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #334155;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 0;
+            padding: 20px;
         }
         .login-card {
             background: white;
@@ -21,12 +23,19 @@
             padding: 35px;
             width: 100%;
             max-width: 400px;
+            margin-bottom: 20px;
         }
         h2 {
             font-weight: 700;
             color: #1e293b;
             margin-bottom: 25px;
             text-align: center;
+        }
+        .page-footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #64748b;
+            max-width: 500px;
         }
     </style>
 </head>
@@ -39,7 +48,7 @@
                 <input type="text" name="username" class="form-control" placeholder="Enter user name">
             </div>
             <div class="mb-4">
-                <label class="form-label">Passwords:</label>
+                <label class="form-label">Password:</label>
                 <input type="password" name="password" class="form-control" placeholder="Enter password">
             </div>
             <div class="d-flex gap-2">
@@ -48,9 +57,9 @@
             </div>
         </form>
     </div>
-    <footer class="text-center py-4 mt-5 border-top bg-white text-muted small">
-    <p class="mb-0">&copy; [Roll No. = 422 ] , [Github - https://github.com/Vivek-Maddheshiya] ,[ Live Deployed link - https://online-bookstore-teamx18.vercel.app?_vercel_share=RSkK9LC4HBLyPB6t4ueqbyf3U5IbzSSF ] All rights reserved.</p>
-    <p class="mb-0">Online Bookstore Project</p>
-</footer>
+    <div class="page-footer">
+        <p class="mb-1">&copy; Roll No. = 422 | <a href="https://github.com/Vivek-Maddheshiya/Online-Bookstore.git" target="_blank">GitHub</a></p>
+        <p class="mb-0">Online Bookstore Project — All rights reserved.</p>
+    </div>
 </body>
 </html>
